@@ -25,14 +25,25 @@
 <!--===============================================================================================-->
 </head>
 <body>
-<form class="login100-form validate-form"  th:object="${user}" >
-	
-	<div class="limiter">
-	 <h1 th:text="|The Balance is  ${user.balance} |" </h1>
+<div class="limiter">
+	<div class="container-login100">
+	<div class="wrap-login100" style="display:flex; align-items: center;justify-content: center;">
+		<form class="login100-form validate-form" th:object="${user}">
+
+			<div class="limiter">
+				<span class="login100-form-title"> <h1 th:text="|The Balance is  ${user.balance} |" </h1></span>
+			</div>
+			<br>
+			
+			<div class="container-login100-form-btn">
+				<a class="login100-form-btn" th:href="@{/home}" >      Back </a>
+			</div>
+			
+			
+
+		</form>
 	</div>
-	<br>
-	<a th:href="@{/home}"> Back </a>
-		
-</form>
+</div>
+</div>
 </body>
 </html>

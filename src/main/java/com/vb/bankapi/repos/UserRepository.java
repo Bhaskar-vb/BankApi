@@ -10,5 +10,5 @@ import com.vb.bankapi.entities.UserDetails;
 public interface UserRepository extends JpaRepository<UserDetails, Integer> {
 	
 	UserDetails findByusername(String username);
-
+	UserDetails findByIdAndPin(int id,int pin);
 }

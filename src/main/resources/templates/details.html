@@ -28,23 +28,50 @@
 <body>
 <div class="limiter">
 	<div class="container-login100">
-		<form th:object="${user}">
-			<div class="limiter">
-				<h1 th:text="|Name : ${user.username} |" </h1>
-			</div>
-			<br>
+		<div class="wrap-login100" style="display:flex; align-items: center;justify-content: center;">
+			<form th:object="${user}">
 
-			<div class="limiter">
-				<h1 th:text="|Password : ${user.password} |" </h1>
-			</div>
-			<br>
+				<div class="limiter">
+					<h1 th:text="|ID : ${user.id} |" </h1>
+				</div>
+				<br>
 
-			<div class="limiter">
-				<h1 th:text="|Balance : ${user.balance} |" </h1>
-			</div>
-			<br>
-			<a th:href="@{/home}"> Back </a>
-		</form>
+				<div class="limiter">
+					<h1 th:text="|Name : ${user.username} |" </h1>
+				</div>
+				<br>
+
+
+				<div class="limiter">
+					<h1 th:text="|Balance : ${user.balance} |" </h1>
+				</div>
+				<br>
+
+				<div class="limiter">
+					<h1 th:text="|Pin : ${user.pin} |" </h1>
+				</div>
+				<br>
+
+				<div class="limiter">
+					<h1 th:text="|Email : ${user.email} |" </h1>
+				</div>
+				<br>
+
+				<div class="limiter">
+					<h1 th:text="|Phone Number : ${user.phonenumber} |" </h1>
+				</div>
+				<br>
+
+				<div class="limiter">
+					<h1 th:text="|Account Number : ${user.accnum} |" </h1>
+				</div>
+				<br>
+
+				<div class="container-login100-form-btn">
+					<a class="login100-form-btn" th:href="@{/home}"> Back </a>
+				</div>
+			</form>
+		</div>
 	</div>
 </div>
 </body>

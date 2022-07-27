@@ -28,13 +28,18 @@
 <body>
 <div class="limiter">
 	<div class="container-login100">
-		<form th:object="${user}" method="POST">
-		<span class="login100-form-title">
-			Enter the amount to deposit :<input type="number" th:field="*{amount}" />
-			<input type="submit" value="Save" /><br>
-			<a th:href="@{/home}"> Back </a>
-		</span>
+	<div class="wrap-login100" style="display:flex; align-items: center;justify-content: center;">
+		<form class="login100-form validate-form" th:object="${user}" method="POST">
+			<span class="login100-form-title">
+				Amount to deposit :</br> </br><input class="input100" type="number" style="padding: 1%;"
+					th:field="*{amount}" /><br><br>
+				<input class="login100-form-btn" type="submit" value="Credit" /><br>
+				<div class="container-login100-form-btn">
+					<a class="login100-form-btn" th:href="@{/home}" > Back </a>
+				</div>
+			</span>
 		</form>
+	</div>
 	</div>
 </div>
 </body>

@@ -25,48 +25,53 @@
 <!--===============================================================================================-->
 </head>
 <body>
+	<div class="limiter">
+		<div class="container-login100">
+			<div>
 	
-	<div class="limiter" >
-		<div class="container-login100"   >
-			<div >
-			
-				<form class="login100-form validate-form" th:action="@{/details}" >
-					<div  style="vertical-align: middle;padding: 10%;">
+				<form class="login100-form validate-form" th:action="@{/details}">
+					<div style="vertical-align: middle;padding: 10%;">
 						<button class="login100-form-btn">
 							User Details
 						</button>
-					</div >
+					</div>
 				</form>
-					
-				<form class="login100-form validate-form" th:action="@{/deposit}" >
+	
+				<form class="login100-form validate-form" th:action="@{/deposit}">
 					<div style="vertical-align: middle;padding: 10%;">
 						<button class="login100-form-btn">
 							Deposit
 						</button>
 					</div>
 				</form>
-					
-				<form class="login100-form validate-form" th:action="@{/withdraw}" >
-					<div  style="vertical-align: middle;padding: 10%;">
+	
+				<form class="login100-form validate-form" th:action="@{/withdraw}">
+					<div style="vertical-align: middle;padding: 10%;">
 						<button class="login100-form-btn">
 							With Draw
 						</button>
-						
-						
+	
+	
 					</div>
 				</form>
-				
-				<form class="login100-form validate-form" th:action="@{/viewbalance}" >
-					<div  style="vertical-align: middle;padding: 10%;">
-						<button class="login100-form-btn"  >
+	
+				<form class="login100-form validate-form" th:action="@{/viewbalance}">
+					<div style="vertical-align: middle;padding: 10%;">
+						<button class="login100-form-btn">
 							View Balance
 						</button>
-					</div>		
+					</div>
 				</form>
-				
+	
+				<form class="login100-form validate-form" th:action="@{/logout}">
+					<div style="vertical-align: middle;padding: 10%;">
+						<button class="login100-form-btn">
+							LogOut
+						</button>
+					</div>
+				</form>
 			</div>
-		</div>d
-
-
+		</div>
+	</div>
 </body>
 </html>

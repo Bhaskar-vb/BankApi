@@ -27,14 +27,48 @@
 <body>
 	<div class="limiter">
 		<div class="container-login100">
-			<form th:action="@{/newuser}" th:object="${user}" method="POST">
-			<span class="login100-form-title">
-				Enter your username :<input type="text" style="padding: 1%;" th:field="*{username}" /><br><br>
-				Enter your Password :<input type="text" style="padding: 1%;" th:field="*{password}" /><br><br>
-				<input type="submit" style="padding: 1%;" value="Save" /><br><br>
-				<a th:href="@{/home}"> <h3>Back </h3> </a>
-			</span>
-			</form>
+			<div class="wrap-login100" style="display:flex; align-items: center;justify-content: center;">
+				<form class="login100-form validate-form" th:action="@{/newuser}" th:object="${user}" method="POST">
+
+					<div class="wrap-input100 validate-input">
+						<h2>Username : </h2><input class="input100" type="text" th:field="*{username}" /><br>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+	
+					<div class="wrap-input100 validate-input">
+						<h2>Password :</h2> <input class="input100" type="password" th:field="*{password}" /><br>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+	
+					<div class="wrap-input100 validate-input">
+	
+						<h2>Pin :</h2> <input class="input100" type="number" th:field="*{pin}" /><br>
+						<span class="focus-input100"></span>
+					</div>
+	
+					<div class="wrap-input100 validate-input">
+	
+						<h2>Email : </h2><input class="input100" type="text" th:field="*{email}" /><br>
+						<span class="focus-input100"></span>
+					</div>
+	
+					<div class="wrap-input100 validate-input">
+	
+						<h2>PhoneNumber :</h2> <input class="input100" type="text" th:field="*{phonenumber}" /><br>
+						<span class="focus-input100"></span>
+					</div>
+	
+					<input class="login100-form-btn" type="submit" style="padding: 1%;" value="Save" /><br><br>
+					<a class="login100-form-btn" th:href="@{/index}"> Back </a>
+	
+				</form>
+			</div>
 		</div>
 	</div>
 </body>
